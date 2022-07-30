@@ -1,0 +1,8 @@
+---
+- name: "Installing and setting HTTP Server"
+  yum:
+    name: httpd
+    state: present
+- service:
+    name: httpd
+    state: started
